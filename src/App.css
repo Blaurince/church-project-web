@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+
+ 
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+h1 {
+    font-weight: 700;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h2 {
+    font-weight: 500;
+}
+
+
+
+
+.container {
+    .main-container {
+        background-color: rgba(0, 0, 0, 0.783);
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+      
+        background-blend-mode: color;
+      }
+
+    }
+
+
+
+
+
+/* .carousel-container {
+    padding: 15px;
+    background-color: "#ababab"
+      img-width="1024"
+      img-height="480"
+      style="text-shadow: 1px 1px 2px #333;"
+} */
+
+.container {
+    width: 100%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container .carousel .slide img {
+    max-height: 80vh;
+    width: auto; /*100vw*/
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.carousel img {
+    height: 300px;
+    align-content: center;
+    object-fit: cover;
 }
+.quote-container p {
+    font-size: clamp(23px, 4vw, 26px );
+    font-weight: 700;
+}
+
+.quote-container q {
+    font-size: 105%;
+}
+
+
+.quote-style{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-body {
+    margin: 10px;
+    padding: 10px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+
+.footer {
+    display: flex;
+    justify-content: "center";
+    text-align: center;
+    padding: 20px;
+    background-color: #a9a9a95c;
+}
+
+
+
