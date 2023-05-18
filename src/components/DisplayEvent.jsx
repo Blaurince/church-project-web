@@ -11,7 +11,10 @@ import img4 from '../assets/image3.JPG'
  //import { event } from "firebase-functions/v1/analytics";
 
 export default function DisplayEvent() {
-  const onDeleteClick = (event) => {};
+  const onDeleteClick = (event) => {
+
+     
+  };
 
   const onEditClick = (event) => {};
 
@@ -19,8 +22,7 @@ export default function DisplayEvent() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(
-        "https://us-central1-church-project-bl.cloudfunctions.net/api/get-events/"
+      const response = await fetch("https://us-central1-church-project-bl.cloudfunctions.net/api/get-events/"
       );
       const data = await response.json();
       setEvent(data);
@@ -41,3 +43,5 @@ export default function DisplayEvent() {
       </div>
   );
 }
+
+

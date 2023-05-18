@@ -1,5 +1,6 @@
 body {
-    background : radial-gradient(#e5e5e5,#ffff,#e5e5e5);
+    background : radial-gradient(#88e0cb,#a7e4c0,#0e0d0d);
+    
 }
 
 
@@ -8,9 +9,12 @@ body {
 
 }
 
-.card:hover {
+.card:hover over{
     box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253)!important;
+    
 }
+
+
 
 .card-body {
     padding: 3rem 0!important 
@@ -25,3 +29,4 @@ body {
 .container-fluid .row {
     padding-top:6rem;
 }
+

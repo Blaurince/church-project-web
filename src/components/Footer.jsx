@@ -3,7 +3,7 @@ import { Github } from "react-bootstrap-icons";
 
 export default function Footer ()  {
         
-    const githubUrl = "";
+    const githubUrl = "https://github.com/Blaurince/church-project-web.git";
    
 
     return (
