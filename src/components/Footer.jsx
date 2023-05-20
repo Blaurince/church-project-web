@@ -8,15 +8,15 @@ export default function Footer ()  {
 
     return (
         <footer>
-            <Container fluid className="="p-5>
+            <Container fluid className="p-5">
                 <Row>
-                    <Col className="text-center">
+                    <Col className="text-center" >
                        <p className="text-center text-secondary">
                        <a href={githubUrl}
                        target="_blank"
                        rel="noreferrer"
                        className="button-effect text-white">
-                      <Github size="40" color="grey" />
+                      <Github size="50" color="grey" />
                       <br /><small>Code in GitHub</small>
                   </a><br />
                   </p>

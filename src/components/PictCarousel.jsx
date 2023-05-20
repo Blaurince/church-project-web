@@ -11,15 +11,15 @@ export default function PictCarousel() {
           fluid
           style={{width: "100%"}}
           className="d-block len"
-          src={`/images/preview01.jpg`}
+          src="https://i.imgur.com/xDvw1Dh.jpg"
           alt="First slide" 
         />
         <Carousel.Caption>
-          <h3>LOVE</h3>
-          <p>
+          <h2 className="text-white">LOVE</h2>
+         <h3> <p className="carousel1">
             God is love, and whoever abides in love abides in God, and God
             abides in him.
-          </p>
+          </p></h3>
           <p>Psalm 86:15</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -28,16 +28,16 @@ export default function PictCarousel() {
         <Image
           fluid
           className="d-block w-100"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwsrSSSwsnpP27G0tzhZlve4kVV54Uiv3BIw&usqp=CAU"
+          src="https://cdn.pixabay.com/photo/2016/05/05/18/24/night-1374501_1280.jpg"
           alt="Second slide"
         />
 
         <Carousel.Caption>
-          <h3>BELIEVE</h3>
-          <p>
+          <h2 className="text-white">BELIEVE</h2>
+          <h3><p className="text-wheat">
             Do not let your heart be troubled; believe in God, believe also in
             me.
-          </p>
+          </p></h3>
           <p>Hebrews 11:1</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -51,12 +51,12 @@ export default function PictCarousel() {
         />
 
         <Carousel.Caption>
-          <h3>PATIENCE</h3>
-          <p>
+          <h2 className="text-white">PATIENCE</h2>
+          <h3><p className="text-wheat">
             Patience leads to abundant understanding, but impatience leads to
             stupid mistakes
           </p>
-          <p>Proverbes 14:29</p>
+          <p>Proverbes 14:29</p></h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

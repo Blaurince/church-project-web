@@ -2,27 +2,28 @@ import React from "react";
 // import { Navbar } from "react-bootstrap";
 //import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { Row } from "react-bootstrap";
  
 
 const Menubar = () => {
   return (  
-    <nav className="navbar">
-      <h3 className="logo" >CFGA</h3>
+    <nav className=" navbar-light bg-secondary" >
+      <h1 className="logo" text-white>ChurchedIn</h1>
       <ul className="nav-Link">
-            <li>
-                <a href="/contact">
-                    Contact Us
-                </a>
+          <li>
+                <p href="/contact" className="text-white">
+                    •Contact Us
+                </p>
             </li>
             <li>
-                <a href="/prayer">
-                Prayer Request
-                </a>
+                <p href="/prayer" className="text-white">
+                •Prayer Request
+                </p>
             </li>
             <li>        
-               <a href="/donate">
-                    Donate
-                </a> 
+               <p href="/donate" className="text-white">
+               •Donate
+                </p> 
             </li>  
        </ul>
     </nav>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 //import { Container, Row, Col, Card} from 'react-bootstrap'
-import { Row, Container } from "react-bootstrap";
+import { Row, Container, Button } from "react-bootstrap";
 import CardItem from "./CardItem";
 import './card-style.css'
 //import churchpic from "../../public/Images/image1.JPG"
@@ -20,6 +20,8 @@ export default function DisplayEvent() {
 
   const [events, setEvent] = useState([]);
 
+
+
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch("https://us-central1-church-project-bl.cloudfunctions.net/api/get-events/"
@@ -29,18 +31,49 @@ export default function DisplayEvent() {
     };
     fetchData();
   }, []);
+
+  const handleGetAllEvents = async () => {
+      const response = await fetch("https://us-central1-church-project-bl.cloudfunctions.net/api/allevents/", {
+
+      headers: { "Content-Type": "application/json"},
+    
+      })
+      const data = await response.json();
+      setEvent(data);
+  }
+
+  const handleGetFourEvents = async () => {
+      const response = await fetch("https://us-central1-church-project-bl.cloudfunctions.net/api/get-events/", {
+
+      headers: { "Content-Type": "application/json"},
+    
+      })
+      const data = await response.json();
+      setEvent(data);
+  }
+
+
+
+
+  
   return (
-      <div className="container-fluid d-flex justify-content-center">
-        <div className="row">
+    <Container>
+      <div className="space-bottom">
+      <Button className="space-right" onClick={() => handleGetAllEvents()}>See All Events</Button>
+      <Button onClick={() => handleGetFourEvents()}>Top 4 Events</Button>
+      </div>
+      <Row className="d-flex justify-content-center">        
         {
             events.map((event)=>(
-                <div className="col-md-3">
-                <CardItem key ={event.id} imgsrc={"/Images/preview.png"} event = {event}/>
-                </div>
+                // <CardItem key ={event.id} imgsrc={event.image} event={event}/>
+                <CardItem key={event.id} events={event} setEvent={setEvent}/>
+                // <p className="card-text"></p>
             ))
         }
-        </div>
-      </div>
+        
+
+        </Row>
+        </Container>
   );
 }
 
