@@ -34,9 +34,7 @@ export default function DisplayEvent() {
 
   const handleGetAllEvents = async () => {
       const response = await fetch("https://us-central1-church-project-bl.cloudfunctions.net/api/allevents/", {
-
       headers: { "Content-Type": "application/json"},
-    
       })
       const data = await response.json();
       setEvent(data);
@@ -44,9 +42,7 @@ export default function DisplayEvent() {
 
   const handleGetFourEvents = async () => {
       const response = await fetch("https://us-central1-church-project-bl.cloudfunctions.net/api/get-events/", {
-
       headers: { "Content-Type": "application/json"},
-    
       })
       const data = await response.json();
       setEvent(data);

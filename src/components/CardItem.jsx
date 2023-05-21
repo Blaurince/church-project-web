@@ -27,9 +27,9 @@ export default function CardItem({events, setEvent}) {
         <Card.Img variant="top" src={events.image} alt="image 1" className='card-img-top'/>
 
         <Card.Body className="church-info">
-          <h4 className='card-title'>Title {events.title}</h4>
-          <p className='card-text text-primary'>Location {events.location}</p>
-          <p className='card-text text-secondary'>Date {events.date}
+          <h4 className='card-title'>{events.title}</h4>
+          <p className='card-text text-primary'> {events.location}</p>
+          <p className='card-text text-secondary'>{events.date}
           </p>
           <button onClick={onDelete} className='btn btn-outline-success'>Delete Event</button>
         </Card.Body>
