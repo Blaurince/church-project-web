@@ -4,11 +4,7 @@ body {
 }
 
 
-/* .card {
-    width: 20rem;
-} */
-
-.card:hover over{
+.card.body:hover over{
     box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253)!important;
     
 }
@@ -29,8 +25,7 @@ body {
     padding-top:6rem;
 }
 
-/* card EFFECT */
-/******************************** */
+
 .card-effect {
     display: block;
     transform: scale(1.0);
